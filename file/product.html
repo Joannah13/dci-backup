@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+        *{   
+           font-family: "Mochiy Pop P One", sans-serif;
+           font-size:12px;
+         }
+.form-box 
+{
+  padding: 10px;
+  background: #f4f7d5;
+  border: 10px solid #f2f2f2;
+}
+label
+{
+  font-size:14px;
+  font:italic;
+}
+</style>
+</head>
+<body>
+<div class="form-box">
+  <form action="http://localhost/file/addproduct.php"  enctype="multipart/form-data" method="post">
+    <div class="form-group">
+      <h1>DETAILS</h1>
+      <label for="name">PRODUCT-NAME :</label>
+      <input type="text" class="form-control" name="pnm" id="pnm"  placeholder="Enter product name"> <br>
+    </div>
+
+    <div class="form-group">
+      <label for="color">PRODUCT-COLOR :</label>
+            <select class="form-control" id="pcolor" name="pcolor" >
+                <option value="">choose color</option>
+                <option value="black">black</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+            </select><br>
+    </div>
+
+    <div class="form-group">
+    <label for="fresh" >PRODUCT-FRESHNESS :</label><br>
+            <input type = "radio" id="fresh" name = "fresh" value = "Brand-New" style="margin-left:50px;"> BRAND-NEW <br>
+            <input type = "radio" id="fresh" name = "fresh" value = "Second-Hand" style="margin-left:50px;"> SECOND-HAND <br>
+            <input type = "radio" id="fresh" name = "fresh" value = "Refurnished" style="margin-left:50px;"> REFURNISHED<br><br>
+    </div>
+
+    <div class="form-group">
+    <label for="price">PRODUCT-PRICE :</label><br>
+        <input type="checkbox" id="t1" name = "price" value = "1" style="margin-left:50px;"> Rs. 9999 and Below <br>
+        <input type="checkbox" id="t2" name = "price" value = "2" style="margin-left:50px;"> Rs. 10000 - Rs. 24999 <br>
+        <input type= "checkbox" id="t3" name = "price" value = "3" style="margin-left:50px;"> Rs. 25000 and Above <br><br>
+    </div>
+    
+    <div class="form-group">
+    <label for="image">IMAGE OF THE PRODUCT:</label><br>
+    <input type="file" value="file" name="file" id="file"><br><br>
+    </div>
+
+    <div class="form-group">
+        <input class="btn btn-outline-success" type="submit"  id="submit" name="submit" value="SUBMIT"><input class="btn btn-outline-warning" type="reset" value="RESET"><br>
+    </div>    
+    </form>  
+</div>
+</body>
+</html>

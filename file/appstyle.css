@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   cursor: pointer;
+   font-family: "Mochiy Pop P One", sans-serif;
+}
+body
+{
+    background:linear-gradient(to right,#f1f6ba,#722690);
+}
+div
+{
+    font-size:15px;
+    background:linear-gradient(to right,#f1f6ba,#722690,0.4);
+    box-shadow :0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    border-radius: 30px;
+}
+
+label
+{
+    margin-left: 25px;
+}
+
+input[type=submit],[type=reset]
+{
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    background:linear-gradient(to right,#722690,#f1f6ba);
+    box-shadow :0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+
+input[type=text],[type=password],[type=date]
+{
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f6e7f1;
+}
+
+input[type=email],[type=file]
+
+{
+    width:250px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f6e7f1;
+}
+
+
+select
+{
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f6e7f1;
+}
+
+textarea
+{
+    background-color: #f6e7f1;
+}
+
+
+h1
+{
+    font-size :25px;
+    text-align: center;
+    margin-bottom:5%;
+}
+
+span
+{
+    color:#ff0000;
+    font-family:'Times New Roman', Times, serif;
+    font-size:12px;
+}
+
+/*label [id="fp"]
+{
+    color:#f6cf0b;
+    font-size:5px;
+}
+*/
+
+

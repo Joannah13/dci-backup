@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>user-form</title>
+<script src="appscript.js"></script>
+<link rel="stylesheet" href="appstyle.css">
+</head>
+    <body>
+        <div style="margin: auto; width:715px; padding: 5px">
+            <form  onsubmit="required(); return false;" method="post" id="form" action="http://localhost//file/users2.php" enctype="multipart/form-data" >
+                <h1><b><u>USER-DETAILS</u></b></h1>
+
+                <label>Name :</label>
+                     <input type="text" placeholder="Enter Name" id="t1"  onblur="f1()" name="nm" style="width:40%;">
+                     <span  id="text1"> </span><br>
+
+                <label>Date of Birth :</label>
+                    <input type="date" id="t2" name="dob"  onkeyup="required()">
+                    <span id="text2"></span><br>
+
+                <label>Select your gender :</label> <span id="text3"></span><br>
+                    <input type = "radio" id="m" name = "gender" value = "1" style="margin-left: 40px;" > Male<br>
+                    <input type = "radio" id="f" name = "gender" value = "2" style="margin-left: 40px;"> Female <br><br>
+            
+                <label>Address :</label>
+                    <span id="text4"></span><br>
+                    <textarea id="t4" placeholder="Enter Address" name="add" rows="4" cols="25" style="margin-left: 40px;"></textarea><br><br>
+                   
+                <label>Chose your favourite subject?</label> <span id="text5"></span><br>
+                    <select id="t5" name="sub"  style="width:200px; margin-left: 40px;">
+                        <option value="">choose subject</option>
+                        <option value="1">Web technology</option>
+                        <option value="2">Data Structures</option>
+                        <option value="3">Programming in java</option>
+                        <option value="4">Others</option> 
+                     </select><br><br>
+                     
+                <label>Chose any certificate courses</label><span id="text6"></span><br>
+                    <input type = "checkbox" id="t61" name = "course" value = "1" style="margin-left: 40px;"> Software Testing <br>
+                    <input type = "checkbox" id="t62" name = "course" value = "2" style="margin-left: 40px;"> Mobile app development<br>
+                    <input type = "checkbox" id="t63" name = "course" value = "3" style="margin-left: 40px;"> Python programming <br><br>
+                    
+                <label>Enter your email:</label>
+                    <input type="email" placeholder="Enter email" id="t7" name="email">
+                    <span id="text7"></span> <br><br>
+                
+                <label>Enter Mobile no:</label>
+                    <input type="text" placeholder="Mobile number" id="t8" name="mno" > 
+                    <span id="text8"></span><br><br>
+               
+                <label>Enter Password :</label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="t9" > 
+                    <span id="text9"></span><br><br>
+                
+                <label>Upload your documents:</label>
+                    <input type="file"  name="file"  value="file" id="t10"> 
+                    <span id="text10"></span><br><br>
+                
+                <label style="margin-left: 250px;">
+                    <input type="submit"  id="submit" name="submit" value="SUBMIT">
+                    <input type="reset" value="RESET"><br><br> 
+                </label>
+            </form>
+        </div>
+    </body>
+</html>
